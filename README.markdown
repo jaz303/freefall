@@ -10,9 +10,11 @@ This is a work in progress, until this message is removed don't bother cloning u
 Installation
 ------------
 
+I'm currently developing this on Rails 2.3.8.
+
     $ rails foo
     $ cd foo
-    $ git clone ... vendor/gems/freefall-4.0.0
+    $ git clone git://github.com/jaz303/freefall.git vendor/gems/freefall-4.0.0
     $ echo "require 'vendor/gems/freefall-4.0.0/lib/tasks'" >> Rakefile
     $ rake ff:setup
     $ script/server
