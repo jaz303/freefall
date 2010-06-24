@@ -1,0 +1,80 @@
+html { height: 100%; }
+body { height: 100%; margin: 0; padding: 0; background: white url(../../../images/admin/bg-sidebar.gif) repeat-y right; }
+	body.help { background-image: url(../../../images/admin/bg-sidebar-help.gif); }
+
+body { min-width: 800px; }
+
+#notifications { position: absolute; top: 0; right: 7px; width: 250px; }
+#notifications div.flash { opacity: 0.9; }
+
+#activity-indicator { display: none; position: absolute; top: 10px; right: 10px; padding: 10px; background-color: black; opacity: 0.75; border: 1px solid #404040; }
+
+#non-footer { position: relative; min-height: 100%; }
+* html #non-footer { height: 100%; }
+
+#header { background: black url(../../../images/admin/bg-header.gif) repeat-x top; height: 80px; color: white; position: relative; }
+  #header h1 { margin: 0; position: absolute; left: 36px; font-weight: bold; border: 0; line-height: 1; top: 10px; font-size: 14px; letter-spacing: 1px;}
+	  #header h1 em { margin-left: 7px; font-size: 80%; font-style: normal; color: #a0a0a0; letter-spacing: 0.05em; }
+	#header #info-bar {}
+    #header #info-bar { position: absolute; right: 13px; top: 12px; font-size: 11px; }
+    #header #info-bar .search { width: 120px; font: 11px "Trebuchet MS", sans-serif; }
+    #header #info-bar .submit { vertical-align: bottom}
+    #header #info-bar a { color: white; text-decoration: none; }
+    #header #info-bar a:hover { text-decoration: underline; }
+		#header #info-bar select { font-size: 10px; }
+	#header #help-actuator-wrapper { display: none; }
+
+#prefs { width: 268px; float: right; padding-left: 22px; }
+  #prefs.tab-bar li.selected { background-image: url(../../../images/admin/tab-prefs-active.gif); }
+  #prefs.tab-bar li.selected a { font-weight: bold; color: #E32220; background-image: url(../../../images/admin/tab-prefs-active-right.gif); }
+
+#sections { padding-left: 30px; }
+  #sections.tab-bar li.selected { background-image: url(../../../images/admin/tab-main-active.gif); }
+  #sections.tab-bar li.selected a { font-weight: bold; color: black; background-image: url(../../../images/admin/tab-main-active-right.gif); }
+
+#main { margin-right: 280px; }
+
+#subnav { background: url(../../../images/admin/bg-subnav.gif) repeat-x top; padding: 5px 5px 5px 17px; margin: 0 0 0 0; font-size: 11px; line-height: 16px; }
+  #subnav a { color: black; text-decoration: none; margin: 0 0 0 16px; padding: 0px 0px 0px 20px; display:block; background-repeat: no-repeat; float:left;}
+	#subnav a span.caption:hover { text-decoration: underline; } 
+	#subnav a.selected { font-weight: bold; }
+
+#content { padding: 10px 10px 41px 10px; }
+
+#sidebar { width: 280px; color: white; padding: 6px 0 41px 0; float: right; }
+
+	#sidebar-wrapper { display: block; }
+	#help-wrapper { display: none; }
+	
+	#sidebar h2 { color: white; font-size: 14px; font-weight: normal; border-bottom: 1px solid #787878; padding-bottom: 2px; }
+	#sidebar h3 { color: white; font-size: 12px; font-weight: bold; }
+	#sidebar h4 { color: white; font-size: 10px; font-weight: bold; border-bottom: 1px solid #787878; padding-bottom: 4px; }
+	#sidebar p,
+	#sidebar dl { line-height: 1.3; font-size: 90%; }
+	#sidebar a { color: #c0c0c0; }
+	#sidebar a:hover { text-decoration: underline; }
+	
+	
+	#sidebar .context { margin: 7px 20px 21px 0; }
+	#sidebar .context h2 { margin-left: 30px; }
+	#sidebar .context ul { margin: 0; padding: 0; }
+ 	#sidebar .context li { list-style: none; margin: 3px 0; padding: 0; }
+  #sidebar .context a { display: block; color: white; background-position: 7px center; background-repeat: no-repeat; height: 18px; padding: 6px 0 0 30px; text-decoration: none; line-height: 1; font-size: 12px; }
+  #sidebar .context li.selected { background: white url(../../../images/admin/bg-context-selected.gif) no-repeat right; }
+  #sidebar .context li.selected a { color: black; }
+  
+  #sidebar div.section { margin: 7px 20px 7px 30px; }
+  
+  #sidebar .recent-activity { width: 100%; }
+  #sidebar .recent-activity td { padding: 4px; vertical-align: middle; }
+  #sidebar .recent-activity tr.row1 { background-color: #202020; }
+  #sidebar .recent-activity tr.row2 { background-color: #101010; }
+  #sidebar .recent-activity td.date { font-size: 90%; }
+  
+  #sidebar .quick-search .search { width: 80%; }
+  #sidebar .quick-search .submit { border: none; vertical-align: bottom; }
+
+#footer { position: relative; margin-top: -31px; border-top: 1px solid #262626; background: black url(../../../images/admin/bg-footer.gif) repeat-x top; height: 24px; text-align: right; padding: 7px 10px 0 0; color: white; line-height: 1; font-size: 11px; text-transform: lowercase; }
+  #footer a { color: white; }
+  #footer strong { font-weight: bold; color: #9598BF; }
+  #footer #indicator { position: absolute; left: 7px; bottom: 6px; }

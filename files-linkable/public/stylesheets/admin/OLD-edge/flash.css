@@ -1,0 +1,7 @@
+.flash { font-size: 11px; line-height: 1.4; padding: 8px 8px 8px 30px; margin: 0 0 10px 0; border-width: 1px; border-style: solid; background-repeat: no-repeat; background-position: 8px 8px; }
+  .flash.error { border-color: #770000; color: #770000; background-color: #ffdddd; background-image: url('../../images/icons/silk/exclamation.png'); }
+  .flash.notice { border-color: #000077; color: #000077; background-color: #ddddff; background-image: url('../../images/icons/silk/information.png'); }
+  .flash.warning { border-color: #D46100; color: #D46100; background-color: #FDF9DD; background-image: url('../../images/icons/silk/error.png'); }
+  .flash.success { border-color: #007700; color: #007700; background-color: #ddffdd; background-image: url('../../images/icons/silk/accept.png'); }
+  .flash ul { margin: 0.5em 0 0 20px; padding: 0; }
+  .flash li { margin: 0 0 0.3em 0; padding: 0; }

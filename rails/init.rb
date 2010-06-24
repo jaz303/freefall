@@ -1,1 +1,3 @@
 require 'freefall'
+
+Freefall.init!

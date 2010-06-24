@@ -1,0 +1,9 @@
+.drag-widget-badge { position: absolute; width: 31px; height: 11px; padding: 9px 0 11px 0; background: url(../../images/admin/drag-badge.png); color: white; font-weight: bold; font: bold 11px/1 Helvetica, sans-serif; text-align: center; display: none; }
+
+/*#tree { }
+  #tree ul { }
+  #tree li { }
+
+  #tree .expander { color: red; }
+      #tree .expander.expanded { color: green; }
+  */

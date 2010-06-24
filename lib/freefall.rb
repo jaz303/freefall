@@ -1,3 +1,5 @@
+FF_ROOT = File.expand_path(File.dirname(__FILE__) + '/..')
+
 module Freefall
   
   def self.gem_dependencies
@@ -26,7 +28,3 @@ module Freefall
   end
   
 end
-
-FF_ROOT = File.expand_path(File.dirname(__FILE__) + '/..')
-
-Freefall.init!

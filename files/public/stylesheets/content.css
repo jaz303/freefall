@@ -1,0 +1,6 @@
+/*
+ * This stylesheet is for user-generated content and is included by
+ * the rich text editor in the admin system. All rules should be
+ * qualified by the .content class
+ */
+.content { }
