@@ -21,6 +21,12 @@
 
 <link rel="shortcut icon" href="<%=image_path('admin/favicon.png') %>" />
 
+<script type='text/javascript'>
+var FF_SESSION_KEY      = <%= ActionController::Base.session_options[:key].to_json %>;
+var FF_SESSION_ID       = <%= u(cookies[ActionController::Base.session_options[:key]]).to_json %>;
+var AUTHENTICITY_TOKEN  = <%= form_authenticity_token.to_json %>;
+</script>
+
 </head>
 
 <body>

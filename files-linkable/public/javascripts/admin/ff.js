@@ -1,8 +1,12 @@
 var ff = {
   
-  init: function() {
-    ff.notifications.init();
-  },
+    
+    //
+    // Boot!
+  
+    init: function() {
+        ff.notifications.init();
+    },
   
   //
   // Background activity
@@ -50,6 +54,19 @@ var ff = {
       }
     },
     
-  }
+  },
+  
+    //
+    // Utility functions
+    
+    util: {
+        appendURIComponent: function(uri, k, v, overwrite) {
+            if (typeof uri != 'string') uri = '';
+            if (overwrite || !uri.match(new RegExp('(^|&)' + k + '='))) {
+                uri += (uri.length ? '&' : '') + k + '=' + encodeURIComponent(v);
+            }
+            return uri;
+        }
+    }
   
 };
