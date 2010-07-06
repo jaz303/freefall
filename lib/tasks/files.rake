@@ -26,6 +26,14 @@ namespace :ff do
       end
     end
     
+    task :copy_migrations_to_app => :environment do
+      FileUtils.cp_r(FileList[FF_ROOT + '/db/migrate/*.rb'], RAILS_ROOT + '/db/migrate')
+    end
+    
+    task :copy_migrations_from_app => :environment do
+      FileUtils.cp_r(FileList[RAILS_ROOT + '/db/migrate/*_ff_*.rb'], FF_ROOT + '/db/migrate')
+    end
+    
     task :copy_prerequisites_to_app => :environment do
       FileUtils.cp_r(FileList[FF_ROOT + '/files/*'], RAILS_ROOT)
     end
@@ -34,7 +42,7 @@ namespace :ff do
       FileUtils.cp_r(FileList[FF_ROOT + '/files-linked/*'], RAILS_ROOT)
     end
     
-    task :copy_all_to_app => [:copy_prerequisites_to_app, :copy_linkables_to_app]
+    task :copy_all_to_app => [:copy_prerequisites_to_app, :copy_migrations_to_app, :copy_linkables_to_app]
     
     task :install_symlinks => :environment do
       if FF_ROOT.index(RAILS_ROOT) == 0
