@@ -4,7 +4,8 @@ module Freefall
   
   def self.gem_dependencies
     [ Rails::GemDependency.new('mini_magick'),
-      Rails::GemDependency.new('will_paginate')
+      Rails::GemDependency.new('will_paginate'),
+      Rails::GemDependency.new('asset-warp')
     ]
   end
   
